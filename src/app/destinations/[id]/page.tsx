@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import RelatedDestinations from "./RelatedDestinations"; 
-import { use } from "react";
+// import { use } from "react";
 
 // Dữ liệu điểm đến
 const destinations = [
@@ -167,12 +167,12 @@ const destinations = [
 ];
 
 // Định nghĩa đúng kiểu dữ liệu cho tham số
-type Props = Promise<{
-  params: {
-    id: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-}>;
+// type Props = Promise<{
+//   params: {
+//     id: string;
+//   };
+//   searchParams: { [key: string]: string | string[] | undefined };
+// }>;
 
 export default async function DestinationDetailPage({params}: {params: Promise<{ id: string }>}) {
   const { id } = await params;
@@ -309,7 +309,7 @@ export default async function DestinationDetailPage({params}: {params: Promise<{
       </section>
 
       {/* Other Destinations */}
-      <RelatedDestinations currentId={id} destinations={destinations} />
+      <RelatedDestinations currentId={parseInt(id)} destinations={destinations} />
     </div>
   );
 } 
