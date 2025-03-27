@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import RelatedDestinations from "./RelatedDestinations";
+import RelatedDestinations from "./RelatedDestinations"; 
 
 // Dữ liệu điểm đến
 const destinations = [
