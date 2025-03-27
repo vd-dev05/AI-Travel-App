@@ -232,7 +232,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                "Chuyến du lịch Hạ Long với TravelViet là một trong những kỷ niệm đáng nhớ nhất của gia đình tôi. Dịch vụ chuyên nghiệp, hướng dẫn viên thân thiện và lịch trình hợp lý."
+                &quot;Chuyến du lịch Hạ Long với TravelViet là một trong những kỷ niệm đáng nhớ nhất của gia đình tôi. Dịch vụ chuyên nghiệp, hướng dẫn viên thân thiện và lịch trình hợp lý.&quot;
               </p>
               <div className="flex items-center">
                 <div className="mr-4">
@@ -269,7 +269,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                "Đã đi Đà Nẵng - Hội An với TravelViet 2 lần và đều rất hài lòng. Giá cả hợp lý, khách sạn tốt và đặc biệt là tour guide rất am hiểu về lịch sử và văn hóa địa phương."
+                &quot;Đã đi Đà Nẵng - Hội An với TravelViet 2 lần và đều rất hài lòng. Giá cả hợp lý, khách sạn tốt và đặc biệt là tour guide rất am hiểu về lịch sử và văn hóa địa phương.&quot;
               </p>
               <div className="flex items-center">
                 <div className="mr-4">
@@ -306,7 +306,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                "Chuyến đi Sapa với TravelViet thật tuyệt vời. Được trải nghiệm văn hóa dân tộc H'Mông, ngắm nhìn ruộng bậc thang và tận hưởng không khí trong lành miền núi."
+                &quot;Chuyến đi Sapa với TravelViet thật tuyệt vời. Được trải nghiệm văn hóa dân tộc H&apos;Mông, ngắm nhìn ruộng bậc thang và tận hưởng không khí trong lành miền núi.&quot;
               </p>
               <div className="flex items-center">
                 <div className="mr-4">

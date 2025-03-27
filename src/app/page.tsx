@@ -315,7 +315,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-600 italic mb-6">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="mr-4">
