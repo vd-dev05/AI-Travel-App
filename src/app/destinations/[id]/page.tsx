@@ -166,13 +166,14 @@ const destinations = [
 ];
 
 // Định nghĩa đúng kiểu dữ liệu cho tham số
-type PageProps = {
+type Props = {
   params: {
     id: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export default function DestinationDetailPage({ params }: PageProps) {
+export default function DestinationDetailPage({ params }: Props) {
   const id = parseInt(params.id);
   const destination = destinations.find(d => d.id === id);
   
