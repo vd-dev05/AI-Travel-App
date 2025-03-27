@@ -168,7 +168,14 @@ const destinations = [
   }
 ];
 
-export default function DestinationDetailPage({ params }: { params: { id: string } }) {
+// Định nghĩa đúng kiểu dữ liệu cho tham số
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export default function DestinationDetailPage({ params }: PageProps) {
   const id = parseInt(params.id);
   const destination = destinations.find(d => d.id === id);
   
