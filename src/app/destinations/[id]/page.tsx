@@ -1,7 +1,7 @@
-'use client'
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import RelatedDestinations from "./RelatedDestinations"; 
+import { use } from "react";
 
 // Dữ liệu điểm đến
 const destinations = [
@@ -167,17 +167,17 @@ const destinations = [
 ];
 
 // Định nghĩa đúng kiểu dữ liệu cho tham số
-type Props = {
+type Props = Promise<{
   params: {
     id: string;
   };
   searchParams: { [key: string]: string | string[] | undefined };
-};
+}>;
 
-export default function DestinationDetailPage({ params }: Props) {
-  const id = parseInt(params.id);
-  const destination = destinations.find(d => d.id === id);
-  
+export default async function DestinationDetailPage({params}: {params: Promise<{ id: string }>}) {
+  const { id } = await params;
+  const destination = destinations.find(d => d.id === parseInt(id));
+
   if (!destination) {
     notFound();
   }
